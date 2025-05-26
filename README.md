@@ -45,5 +45,5 @@ Open a Pull Request
 MIT License - see LICENSE file for details.
 📞 Contact
 
-Email: your-narwatneeraj01@gmail.com
+Email: narwatneeraj01@gmail.com
 GitHub: @narwatneeraj01
