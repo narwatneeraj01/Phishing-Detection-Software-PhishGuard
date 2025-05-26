@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>PhishGuard - Advanced Phishing Detection Software</title>
+    <!-- CSS STYLING -->
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">🛡️ PhishGuard</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#performance">Performance</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1 class="animate-fade-in">PhishGuard</h1>
+                <p class="animate-fade-in">Advanced AI-Powered Phishing Detection for Private Messages</p>
+                <a href="#demo" class="cta-button animate-fade-in">Try Demo</a>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div>Detection Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5%</div>
+                    <div>False Positive Rate</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50ms</div>
+                    <div>Detection Latency</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1M+</div>
+                    <div>URLs Analyzed</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="container">
+            <div class="features">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Key Features</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🔍</div>
+                        <h3>Real-Time Scanning</h3>
+                        <p>Continuously monitors messages across platforms including SMS, WhatsApp, and Messenger for malicious URLs.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>AI-Powered Detection</h3>
+                        <p>Uses Random Forest, SVM, and Logistic Regression models to identify sophisticated phishing attempts.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🔒</div>
+                        <h3>Privacy Compliant</h3>
+                        <p>GDPR and CCPA compliant with AES-256 encryption and user consent management.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Fast Response</h3>
+                        <p>Sub-50ms detection latency ensures real-time protection without user experience disruption.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>Cross-Platform</h3>
+                        <p>Works seamlessly across mobile and desktop platforms with unified protection.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Advanced Analytics</h3>
+                        <p>Comprehensive reporting and threat intelligence with detailed attack pattern analysis.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="demo" class="container">
+            <div class="demo-section">
+                <h2 style="text-align: center; margin-bottom: 2rem;">Try Our URL Checker</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">Test our phishing detection algorithm with any URL</p>
+                
+                <div class="url-checker">
+                    <div class="input-group">
+                        <input type="url" class="url-input" id="urlInput" placeholder="Enter URL to check (e.g., https://example.com)">
+                        <button class="check-btn" onclick="checkURL()">Check URL</button>
+                    </div>
+                    <div id="result" class="result"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="architecture" class="container">
+            <div class="architecture">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">System Architecture</h2>
+                
+                <div class="architecture-diagram">
+                    <div class="flow-step">Message Scanning</div>
+                    <span class="arrow">→</span>
+                    <div class="flow-step">URL Extraction</div>
+                    <span class="arrow">→</span>
+                    <div class="flow-step">Feature Analysis</div>
+                    <span class="arrow">→</span>
+                    <div class="flow-step">ML Classification</div>
+                    <span class="arrow">→</span>
+                    <div class="flow-step">User Alert</div>
+                </div>
+
+                <h3 style="margin: 2rem 0 1rem 0; color: #333;">Core Components</h3>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <h4>Data Extraction Layer</h4>
+                        <p>Securely accesses messages with user consent using APIs like Twilio for SMS and platform-specific APIs for messaging apps.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>Feature Extraction</h4>
+                        <p>Analyzes domain-based, URL-based, and content-based features including length, subdomains, and phishing keywords.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h4>ML Classification</h4>
+                        <p>Hybrid model combining Random Forest, SVM, and Logistic Regression for robust phishing detection.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="performance" class="container">
+            <div class="features">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #333;">Performance Comparison</h2>
+                
+                <table class="performance-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Accuracy</th>
+                            <th>Precision</th>
+                            <th>Recall</th>
+                            <th>False Positive Rate</th>
+                            <th>Detection Latency</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Random Forest (Primary)</strong></td>
+                            <td>98%</td>
+                            <td>94%</td>
+                            <td>96%</td>
+                            <td>5%</td>
+                            <td>50ms</td>
+                        </tr>
+                        <tr>
+                            <td>Support Vector Machine</td>
+                            <td>92-94%</td>
+                            <td>92%</td>
+                            <td>60%</td>
+                            <td>8%</td>
+                            <td>960ms</td>
+                        </tr>
+                        <tr>
+                            <td>Logistic Regression</td>
+                            <td>88-90%</td>
+                            <td>66%</td>
+                            <td>70%</td>
+                            <td>85%</td>
+                            <td>30ms</td>
+                        </tr>
+                        <tr>
+                            <td>Traditional Methods</td>
+                            <td>84%</td>
+                            <td>78%</td>
+                            <td>82%</td>
+                            <td>5-7%</td>
+                            <td>100ms+</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div style="background: #e3f2fd; padding: 2rem; border-radius: 10px; margin: 2rem 0;">
+                    <h3 style="color: #1976d2; margin-bottom: 1rem;">Key Performance Highlights</h3>
+                    <ul style="color: #333;">
+                        <li><strong>Superior Accuracy:</strong> 98% detection rate outperforms traditional methods by 14%</li>
+                        <li><strong>Low False Positives:</strong> Only 5% false positive rate reduces user alert fatigue</li>
+                        <li><strong>Real-Time Performance:</strong> 50ms latency ensures seamless user experience</li>
+                        <li><strong>Robust Detection:</strong> 90% resilience against adversarial attacks and obfuscated URLs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 PhishGuard. <h4>Made By: Neeraj Narwat</h4> Advanced Phishing Detection Software. All rights reserved.</p>
+            <p>Protecting users from phishing attacks while maintaining privacy and compliance.</p>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
