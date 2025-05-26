@@ -18,7 +18,9 @@ Modern UI: Clean design with smooth animations
 
 🛠️ Installation
 bashgit clone https://github.com/your-username/phishguard.git
+
 cd phishguard
+
 Open index.html in your browser or use a local server.
 
 Open the website
